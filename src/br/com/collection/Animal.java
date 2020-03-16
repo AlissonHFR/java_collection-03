@@ -7,14 +7,14 @@ public abstract class Animal {
 	}
 	
 	public void dizerMeuNome() {
-		System.out.println("O nome do animal é: xxxx");
+		System.out.println("O nome do animal é: " + getNome());
 	}
 	
 	private void dizerMinhaIdade() {
 		System.out.println("Minha idade é: xxx");
 	}
 	
-	private String cor = "preto";
+	
 	public String getCor() {
 		return cor;
 	}
@@ -34,7 +34,8 @@ public abstract class Animal {
 	public int getIdade() {
 		return idade;
 	}
-
+	
+	private String cor = "preto";
 	private int idade = 5;
 	private String nome = "não definido";
 }

@@ -1,10 +1,23 @@
 package br.com.collection;
 
-public class Gato {
+public class Gato extends Animal{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public Gato() {
+		setCor("branco");
+	}
+	
+	public Gato(String cor) {
+		setCor(cor);
+	}
+	
+	@Override
+	public void som() {
+		super.som();
+		System.out.println("Eu gosto de miar");
+	}
+	
+	public void oQueFacoDuranteANoite() {
+		System.out.println("Eu gosto de pular a cerca toda noite");
 	}
 
 }
